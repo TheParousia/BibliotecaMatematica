@@ -1,20 +1,24 @@
 ﻿using System;
 
-class Program{
+class Program
+{
 
-    static void Main(){
+    static void Main()
+    {
         int opt = 0;
         bool repetir = true;
+        double pi, raio, resultado;
         //Insira as variáveis do seu algoritmo aqui
 
-        do{
+        do
+        {
             //Apaga o que tem na tela
             Console.Clear();
 
             Console.WriteLine("\tMENU");
             Console.WriteLine("1- Opção 1");
             Console.WriteLine("2- Opção 2");
-            Console.WriteLine("3- Opção 3");
+            Console.WriteLine("3- Área de um círculo");
             Console.WriteLine("4- Opção 4");
             Console.WriteLine("5- Opção 5");
             Console.WriteLine("6- Opção 6");
@@ -24,7 +28,8 @@ class Program{
 
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
-            switch (opt){
+            switch (opt)
+            {
                 case 1:
                     Console.WriteLine("Opt1");
                     break;
@@ -32,7 +37,17 @@ class Program{
                     Console.WriteLine("Opt3");
                     break;
                 case 3:
-                    Console.WriteLine("Opt3");
+                    Console.WriteLine("Você escolheu calcular a área de um círculo");
+
+                    Console.WriteLine("Digite o valor do PI:");
+                    pi = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor do raio do círculo:");
+                    raio = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.areaDoCirculo(raio);
+
+                    Console.WriteLine("A área do círculo é {0} ", resultado);
                     break;
                 case 4:
                     Console.WriteLine("Opt4");
@@ -56,8 +71,8 @@ class Program{
             // Pausa a execução do programa até uma tecla ser apertada
             Console.ReadKey();
 
-        }while(repetir);
+        } while (repetir);
     }
-    
+
 }
 
