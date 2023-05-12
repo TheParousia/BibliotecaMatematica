@@ -5,6 +5,7 @@ class Program{
     static void Main(){
         int opt = 0;
         bool repetir = true;
+        double x1, x2, y1, y2, resultado;
         //Insira as variáveis do seu algoritmo aqui
 
         do{
@@ -17,7 +18,7 @@ class Program{
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
             Console.WriteLine("5- Opção 5");
-            Console.WriteLine("6- Opção 6");
+            Console.WriteLine("6- Opção 6( Distancia entre dois pontos)");
             Console.WriteLine("99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
@@ -26,7 +27,7 @@ class Program{
             Console.Clear();
             switch (opt){
                 case 1:
-                    Console.WriteLine("Opt1");
+                    
                     break;
                 case 2:
                     Console.WriteLine("Opt3");
@@ -42,6 +43,22 @@ class Program{
                     break;
                 case 6:
                     Console.WriteLine("Opt6");
+                    Console.WriteLine("Você escolheu a opção 6(Distancia entre dois pontos)");
+
+                   Console.WriteLine("Digite a Distância do ponto x2:");
+                    x1 = double.Parse(Console.ReadLine());
+
+                   Console.WriteLine("Digite a Distância do ponto x1:");
+                    x2 = double.Parse(Console.ReadLine());
+                    
+                   Console.WriteLine("Digite a Distância do ponto y2:");
+                    y1 = double.Parse(Console.ReadLine());
+
+                   Console.WriteLine("Digite a Distância do ponto y1:");
+                    y2 = double.Parse(Console.ReadLine());
+
+                   resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
+                   Console.WriteLine("A Distância entre os dois pontos é {0} ", resultado);
                     break;
                 case 99:
                     Console.WriteLine("Opção sair");
