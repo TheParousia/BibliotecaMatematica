@@ -2,17 +2,19 @@
 
 class Program{
 
+
     static void Main(){
-        int opt = 0;
+    int opt = 0;
+        double basedoquadrado, altura, resultado;
         bool repetir = true;
+        do{
         //Insira as variáveis do seu algoritmo aqui
 
-        do{
             //Apaga o que tem na tela
             Console.Clear();
-
+        
             Console.WriteLine("\tMENU");
-            Console.WriteLine("1- Opção 1");
+            Console.WriteLine("1- Área de um quadrado");
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
@@ -26,8 +28,16 @@ class Program{
             Console.Clear();
             switch (opt){
                 case 1:
-                    Console.WriteLine("Opt1");
-                    break;
+                    Console.WriteLine("Digite o valor da base do quadrado : ");
+                    basedoquadrado = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da altura do quadrado : ");
+                    altura = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.areaQuadrado(basedoquadrado, altura);
+
+                    Console.WriteLine("A area do quadrado é {0} ", resultado);
+                break;
                 case 2:
                     Console.WriteLine("Opt3");
                     break;
