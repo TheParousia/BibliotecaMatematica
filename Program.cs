@@ -3,7 +3,8 @@
 class Program{
 
     static void Main(){
-        int opt = 0;
+        int opção = 0;
+        double raio, resultado;
         bool repetir = true;
         //Insira as variáveis do seu algoritmo aqui
 
@@ -12,47 +13,29 @@ class Program{
             Console.Clear();
 
             Console.WriteLine("\tMENU");
-            Console.WriteLine("1- Opção 1");
-            Console.WriteLine("2- Opção 2");
-            Console.WriteLine("3- Opção 3");
-            Console.WriteLine("4- Opção 4");
-            Console.WriteLine("5- Opção 5");
-            Console.WriteLine("6- Opção 6");
-            Console.WriteLine("99- Sair\n");
-
-            opt = int.Parse(Console.ReadLine());
+            Console.WriteLine("1-Calcular o Volume da Esfera");
+        
+            opção = int.Parse(Console.ReadLine());
 
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
-            switch (opt){
+            switch (opção){
                 case 1:
-                    Console.WriteLine("Opt1");
-                    break;
-                case 2:
-                    Console.WriteLine("Opt3");
-                    break;
-                case 3:
-                    Console.WriteLine("Opt3");
-                    break;
-                case 4:
-                    Console.WriteLine("Opt4");
-                    break;
-                case 5:
-                    Console.WriteLine("Opt5");
-                    break;
-                case 6:
-                    Console.WriteLine("Opt6");
-                    break;
-                case 99:
-                    Console.WriteLine("Opção sair");
-                    repetir = false;
+                    Console.WriteLine("Opção 1");
+                    Console.WriteLine("Digite valor do raio: ");
+                    raio = int.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.CalculaVolumeEsfera(raio);
+                    
+                    Console.WriteLine("O Resultado do volume da Esfera : {0}",resultado);
+
                     break;
                 default:
                     Console.WriteLine("Opção Invalida");
                     break;
             }
 
-            Console.WriteLine("\n\nPrecione uma tecla para prosseguir...");
+            Console.WriteLine("\nPrecione uma tecla para prosseguir...");
             // Pausa a execução do programa até uma tecla ser apertada
             Console.ReadKey();
 
