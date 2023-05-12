@@ -1,0 +1,15 @@
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\bin\Debug\net7.0\BibliotecaMatematica.exe
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\bin\Debug\net7.0\BibliotecaMatematica.deps.json
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\bin\Debug\net7.0\BibliotecaMatematica.runtimeconfig.json
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\bin\Debug\net7.0\BibliotecaMatematica.dll
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\bin\Debug\net7.0\BibliotecaMatematica.pdb
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.csproj.AssemblyReference.cache
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.AssemblyInfoInputs.cache
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.AssemblyInfo.cs
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.csproj.CoreCompileInputs.cache
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.dll
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\refint\BibliotecaMatematica.dll
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.pdb
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\BibliotecaMatematica.genruntimeconfig.cache
+C:\Users\gabriel11119477\Desktop\BibliotecaMatematica\obj\Debug\net7.0\ref\BibliotecaMatematica.dll
