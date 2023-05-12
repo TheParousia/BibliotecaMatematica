@@ -5,6 +5,7 @@ class Program{
     static void Main(){
         int opt = 0;
         bool repetir = true;
+        double lado, altura, resultado;
         //Insira as variáveis do seu algoritmo aqui
 
         do{
@@ -16,7 +17,7 @@ class Program{
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
-            Console.WriteLine("5- Opção 5");
+            Console.WriteLine("5- Volume de uma pirâmide");
             Console.WriteLine("6- Opção 6");
             Console.WriteLine("99- Sair\n");
 
@@ -38,9 +39,22 @@ class Program{
                     Console.WriteLine("Opt4");
                     break;
                 case 5:
-                    Console.WriteLine("Opt5");
+                    Console.WriteLine("Você escolheu a opção 5");
+
+                        
+                     Console.WriteLine("Digite o valor do lado da pirâmide:");
+                     lado = double.Parse(Console.ReadLine());
+                        
+                     Console.WriteLine("Digite o valor da altura:");
+                     altura = double.Parse(Console.ReadLine());
+
+                     resultado = Biblioteca.volumeDaPiramide(lado, altura);
+
+                    Console.WriteLine("volume da Piramide é {0} ", resultado);
                     break;
+                 
                 case 6:
+                    
                     Console.WriteLine("Opt6");
                     break;
                 case 99:
