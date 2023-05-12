@@ -2,57 +2,60 @@
 
 class Program{
 
+
     static void Main(){
         int opt = 0;
-        bool repetir = true;
-        //Insira as variáveis do seu algoritmo aqui
+        double num, altura,raio, volumeCilindro;
 
+        bool repetir = true;
         do{
             //Apaga o que tem na tela
             Console.Clear();
 
             Console.WriteLine("\tMENU");
-            Console.WriteLine("1- Opção 1");
+            Console.WriteLine("1- Volume do cilindro");
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
             Console.WriteLine("5- Opção 5");
             Console.WriteLine("6- Opção 6");
-            Console.WriteLine("99- Sair\n");
+            Console.WriteLine("4- Sair");
 
             opt = int.Parse(Console.ReadLine());
 
-            //Limpa o menu para mostrar somente a opção selecionada
-            Console.Clear();
             switch (opt){
                 case 1:
-                    Console.WriteLine("Opt1");
+                    Console.WriteLine("Digite a altura do cilindro");
+                    
+                    altura = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o raio da base do cilindro");
+
+                    raio = double.Parse(Console.ReadLine());
+                    
+                    volumeCilindro = Biblioteca.CalculaVolumeCilindro(raio, altura);
+
+                    Console.WriteLine("{0}", volumeCilindro);
                     break;
                 case 2:
-                    Console.WriteLine("Opt3");
+                    Console.WriteLine("Opt2");
                     break;
                 case 3:
                     Console.WriteLine("Opt3");
                     break;
                 case 4:
-                    Console.WriteLine("Opt4");
+                    Console.WriteLine("Opt3");
+                    repetir = false;
                     break;
                 case 5:
-                    Console.WriteLine("Opt5");
-                    break;
-                case 6:
-                    Console.WriteLine("Opt6");
-                    break;
-                case 99:
-                    Console.WriteLine("Opção sair");
-                    repetir = false;
+                    Console.WriteLine("Digite o volume da esfera ");
+                    
+                    
                     break;
                 default:
                     Console.WriteLine("Opção Invalida");
                     break;
             }
-
-            Console.WriteLine("\n\nPrecione uma tecla para prosseguir...");
             // Pausa a execução do programa até uma tecla ser apertada
             Console.ReadKey();
 
