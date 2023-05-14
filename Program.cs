@@ -2,18 +2,22 @@
 
 class Program{
 
-    static void Main(){
-        int opt = 0;
-        bool repetir = true;
-        double basemaior, basemenor, altura, resultado;
-        //Insira as variáveis do seu algoritmo a
 
+    static void Main(){
+        //Insira as variáveis do seu algoritmo aqui
+      
+        int opt = 0;
+        double basedoquadrado, altura, resultado;
+        double basemaior, basemenor, altura, resultado;
+        bool repetir = true;
         do{
+
             //Apaga o que tem na tela
             Console.Clear();
-
+        
             Console.WriteLine("\tMENU");
-            Console.WriteLine("1- Área de um trapézio");
+            Console.Write("1- Área de um trapézio");
+            Console.WriteLine("    2- Área de um quadrado");
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
@@ -41,6 +45,17 @@ class Program{
                    resultado = Biblioteca.areaTrapezio(basemaior, basemenor, altura);
 
                    Console.WriteLine("A área do trapézio é {0} ", resultado);
+                  break;
+                case 2:
+                    Console.WriteLine("Digite o valor da base do quadrado : ");
+                    basedoquadrado = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da altura do quadrado : ");
+                    altura = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.areaQuadrado(basedoquadrado, altura);
+
+                    Console.WriteLine("A area do quadrado é {0} ", resultado);
 
                     break;
                 case 2:
