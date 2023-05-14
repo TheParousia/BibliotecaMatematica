@@ -1,4 +1,9 @@
 class Biblioteca{
+    
+    static public double CalculaVolumeEsfera(double r){
+        return 4/3 * Math.PI * Math.Pow(r, 3);
+    }
+  
     // Código do João
     static public double areaQuadrado(double basedoquadrado, double altura){
         double area;
@@ -15,4 +20,5 @@ class Biblioteca{
 
         return area;
     }
+        
 }

@@ -9,17 +9,19 @@ class Program{
         int opt = 0;
         double basedoquadrado, altura, resultado;
         double basemaior, basemenor, altura, resultado;
+        double raio;
         bool repetir = true;
-        do{
+        
+      do{
 
             //Apaga o que tem na tela
             Console.Clear();
         
             Console.WriteLine("\tMENU");
+
             Console.Write("1- Área de um trapézio");
             Console.WriteLine("    2- Área de um quadrado");
-            Console.WriteLine("2- Opção 2");
-            Console.WriteLine("3- Opção 3");
+            Console.WriteLine("3 - Calcular o Volume da Esfera");
             Console.WriteLine("4- Opção 4");
             Console.WriteLine("5- Opção 5");
             Console.WriteLine("6- Opção 6");
@@ -29,8 +31,8 @@ class Program{
 
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
-            switch (opt){
-                case 1:
+            switch (opção){
+              case 1:
                    Console.WriteLine("Você escolheu calcular a área de um trapézio");
                     
                    Console.WriteLine("Digite o valor da base maior:");
@@ -58,11 +60,15 @@ class Program{
                     Console.WriteLine("A area do quadrado é {0} ", resultado);
 
                     break;
-                case 2:
-                    Console.WriteLine("Opt3");
-                    break;
+                
                 case 3:
-                    Console.WriteLine("Opt3");
+                    Console.WriteLine("Opção 1");
+                    Console.WriteLine("Digite valor do raio: ");
+                    raio = int.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.CalculaVolumeEsfera(raio);
+                    
+                    Console.WriteLine("O Resultado do volume da Esfera : {0}",resultado);
                     break;
                 case 4:
                     Console.WriteLine("Opt4");
@@ -82,7 +88,7 @@ class Program{
                     break;
             }
 
-            Console.WriteLine("\n\nPrecione uma tecla para prosseguir...");
+            Console.WriteLine("\nPrecione uma tecla para prosseguir...");
             // Pausa a execução do programa até uma tecla ser apertada
             Console.ReadKey();
 
