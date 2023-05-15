@@ -7,7 +7,7 @@ class Program
     {
         int opt = 0;
         bool repetir = true;
-        double pi, raio, resultado;
+        double raio, resultado;
         //Insira as variáveis do seu algoritmo aqui
 
         do
@@ -38,9 +38,6 @@ class Program
                     break;
                 case 3:
                     Console.WriteLine("Você escolheu calcular a área de um círculo");
-
-                    Console.WriteLine("Digite o valor do PI:");
-                    pi = double.Parse(Console.ReadLine());
 
                     Console.WriteLine("Digite o valor do raio do círculo:");
                     raio = double.Parse(Console.ReadLine());
