@@ -1,5 +1,14 @@
 class Biblioteca{
+    // Código do Pedro
+    //Escdreva a sua função alterando o que for nescessário
+    static public double VolumeDoPrisma(double largura, double basedoprisma, double altura){
+        double volume;
+        volume = largura * basedoprisma * altura;
+
+        return volume;
+    }
     
+    // Código da Lavigne
     static public double CalculaVolumeEsfera(double r){
         return 4/3 * Math.PI * Math.Pow(r, 3);
     }

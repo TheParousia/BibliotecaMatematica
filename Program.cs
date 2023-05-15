@@ -11,9 +11,10 @@ class Program{
         double basemaior, basemenor, altura, resultado;
         double raio;
         bool repetir = true;
+        double largura, basedoprisma, altura, resultado;
+        //Insira as variáveis do seu algoritmo aqui
         
       do{
-
             //Apaga o que tem na tela
             Console.Clear();
         
@@ -21,8 +22,8 @@ class Program{
 
             Console.Write("1- Área de um trapézio");
             Console.WriteLine("    2- Área de um quadrado");
-            Console.WriteLine("3 - Calcular o Volume da Esfera");
-            Console.WriteLine("4- Opção 4");
+            Console.Write("3 - Calcular o Volume da Esfera");
+            Console.WriteLine("4- Volume de um prisma retangular");    
             Console.WriteLine("5- Opção 5");
             Console.WriteLine("6- Opção 6");
             Console.WriteLine("99- Sair\n");
@@ -71,7 +72,22 @@ class Program{
                     Console.WriteLine("O Resultado do volume da Esfera : {0}",resultado);
                     break;
                 case 4:
-                    Console.WriteLine("Opt4");
+                
+                    Console.WriteLine("Você escolheu calcular o volume de um prisma retangular");
+
+                    Console.WriteLine("Digite o valor da largura do prisma:");
+                    largura = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da base:");
+                    basedoprisma = double.Parse(Console.ReadLine());
+                    
+                    Console.WriteLine("Digite o valor da altura:");
+                    altura = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.VolumeDoPrisma(largura, basedoprisma, altura);
+
+                    Console.WriteLine("A área do prisma é {0} ", resultado);
+
                     break;
                 case 5:
                     Console.WriteLine("Opt5");
