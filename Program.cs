@@ -4,6 +4,7 @@ class Program{
 
     static void Main(){
         int opt = 0;
+        double  num, resultado, D, d;
         bool repetir = true;
         //Insira as variáveis do seu algoritmo aqui
 
@@ -12,7 +13,7 @@ class Program{
             Console.Clear();
 
             Console.WriteLine("\tMENU");
-            Console.WriteLine("1- Opção 1");
+            Console.WriteLine("1- Calcula área do Losango");
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
@@ -26,8 +27,20 @@ class Program{
             Console.Clear();
             switch (opt){
                 case 1:
-                    Console.WriteLine("Opt1");
+                    Console.WriteLine("Calcula área Losango");
+                    
+                    Console.WriteLine("insira a diagonal menor");
+                    d = double.Parse(Console.ReadLine());
+                     
+                    Console.WriteLine("insira a diagonal maior");
+                    D = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.CalculeAreaLosango(D, d);
+                   
+                    Console.WriteLine("A área do losango é {0}", resultado);
+
                     break;
+                     
                 case 2:
                     Console.WriteLine("Opt3");
                     break;
