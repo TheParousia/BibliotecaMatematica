@@ -1,12 +1,10 @@
-class Biblioteca
-{
-    //Escdreva a sua função alterando o que for nescessário
-    static public double NomeDaFuncao(){
-        return 100;
+class Biblioteca{
+    
+    static public double CalculaVolumeEsfera(double r){
+        return 4/3 * Math.PI * Math.Pow(r, 3);
     }
 
-    internal static double CalculaVolumeCilindro(double raio, double altura)
-    {
-        throw new NotImplementedException();
+    static public double CalculaVolumeCilindro(double raio, double altura){
+        return 2*Math.PI*raio*altura;
+        }
     }
-}
