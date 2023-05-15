@@ -45,16 +45,16 @@ class Program{
                     Console.WriteLine("Opt6");
                     Console.WriteLine("Você escolheu a opção 6(Distancia entre dois pontos)");
 
-                   Console.WriteLine("Digite a Distância do ponto x2:");
+                   Console.WriteLine("Digite a Coordenadas X do ponto B: ");
                     x1 = double.Parse(Console.ReadLine());
 
-                   Console.WriteLine("Digite a Distância do ponto x1:");
+                   Console.WriteLine("Digite a Coordenadas X do ponto A: ");
                     x2 = double.Parse(Console.ReadLine());
                     
-                   Console.WriteLine("Digite a Distância do ponto y2:");
+                   Console.WriteLine("Digite a Coordenadas Y do ponto B: ");
                     y1 = double.Parse(Console.ReadLine());
 
-                   Console.WriteLine("Digite a Distância do ponto y1:");
+                   Console.WriteLine("Digite a Coordenadas X do ponto A: ");
                     y2 = double.Parse(Console.ReadLine());
 
                    resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
