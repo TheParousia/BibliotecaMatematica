@@ -5,6 +5,7 @@ class Program{
     static void Main(){
         int opt = 0;
         bool repetir = true;
+        double b, h, area;
         //Insira as variáveis do seu algoritmo aqui
 
         do{
@@ -16,7 +17,7 @@ class Program{
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
-            Console.WriteLine("5- Opção 5");
+            Console.WriteLine("5- Area do Triangulo");
             Console.WriteLine("6- Opção 6");
             Console.WriteLine("99- Sair\n");
 
@@ -29,7 +30,7 @@ class Program{
                     Console.WriteLine("Opt1");
                     break;
                 case 2:
-                    Console.WriteLine("Opt3");
+                    Console.WriteLine("Opt2");
                     break;
                 case 3:
                     Console.WriteLine("Opt3");
@@ -38,7 +39,17 @@ class Program{
                     Console.WriteLine("Opt4");
                     break;
                 case 5:
-                    Console.WriteLine("Opt5");
+                    Console.WriteLine("Area do Triangulo");
+                    
+                    Console.WriteLine("digite o valor da base :");
+                    b = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da altura :");
+                    h = double.Parse(Console.ReadLine());
+
+                    area = Biblioteca.areaTriangulo (b ,h);
+                    Console.WriteLine("Área do triangulo = {0}", area);
+                
                     break;
                 case 6:
                     Console.WriteLine("Opt6");
