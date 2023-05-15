@@ -5,6 +5,7 @@ class Program{
     static void Main(){
         int opt = 0;
         bool repetir = true;
+        double Resultado;
         //Insira as variáveis do seu algoritmo aqui
 
         do{
@@ -12,7 +13,7 @@ class Program{
             Console.Clear();
 
             Console.WriteLine("\tMENU");
-            Console.WriteLine("1- Opção 1");
+            Console.WriteLine("Formula da Média Aritmética");
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
@@ -26,7 +27,23 @@ class Program{
             Console.Clear();
             switch (opt){
                 case 1:
-                    Console.WriteLine("Opt1");
+                    Console.Write("Você escolheu a Fórmula da Média Aritmética, agora vamos cálcular!");
+
+                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    c1 = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    c2 = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    c3 = double.Parse(Console.ReadLine());
+
+                    Resultado = Biblioteca.mediaAritmetica(c1,c2,c3);
+
+                    Console.WriteLine("Média artimética = {0}", Resultado);
+
+                    
+                    
                     break;
                 case 2:
                     Console.WriteLine("Opt3");
