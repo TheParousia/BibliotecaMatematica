@@ -11,6 +11,7 @@ class Program{
         double basemaior, basemenor, altura, resultado;
         double raio;
         bool repetir = true;
+        double num;
         
       do{
 
@@ -19,13 +20,13 @@ class Program{
         
             Console.WriteLine("\tMENU");
 
-            Console.Write("1- Área de um trapézio");
-            Console.WriteLine("    2- Área de um quadrado");
-            Console.WriteLine("3 - Calcular o Volume da Esfera");
-            Console.WriteLine("4- Opção 4");
+            Console.WriteLine("1- Formula do trapézio");
+            Console.WriteLine("2- Formula do quadrado");
+            Console.WriteLine("3- Formula do volume da esfera");
+            Console.WriteLine("4- Formula da area do círculo");
             Console.WriteLine("5- Opção 5");
             Console.WriteLine("6- Opção 6");
-            Console.WriteLine("99- Sair\n");
+            Console.WriteLine("7- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
 
@@ -71,7 +72,16 @@ class Program{
                     Console.WriteLine("O Resultado do volume da Esfera : {0}",resultado);
                     break;
                 case 4:
-                    Console.WriteLine("Opt4");
+                
+                    Console.WriteLine("Você escolheu a Formula do círculo, Agora vamos calcular !");
+                    Console.WriteLine("Digite o valor do raio:   ");
+
+                    num = double.Parse(Console.ReadLine());
+                    
+                    Biblioteca.areaCirculo(num);
+                
+                    Console.WriteLine("A área do círculo =  {0}",num);
+
                     break;
                 case 5:
                     Console.WriteLine("Opt5");
