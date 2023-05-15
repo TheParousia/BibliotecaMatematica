@@ -50,11 +50,11 @@ class Program{
 
                    Console.WriteLine("Digite a Coordenadas X do ponto A: ");
                     x2 = double.Parse(Console.ReadLine());
-                    
+                        
                    Console.WriteLine("Digite a Coordenadas Y do ponto B: ");
                     y1 = double.Parse(Console.ReadLine());
 
-                   Console.WriteLine("Digite a Coordenadas X do ponto A: ");
+                   Console.WriteLine("Digite a Coordenadas Y do ponto A: ");
                     y2 = double.Parse(Console.ReadLine());
 
                    resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
