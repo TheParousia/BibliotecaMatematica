@@ -5,7 +5,7 @@ class Program{
     static void Main(){
         int opt = 0;
         bool repetir = true;
-        double Resultado;
+        double Resultado, c1, c2, c3;
         //Insira as variáveis do seu algoritmo aqui
 
         do{
@@ -13,13 +13,13 @@ class Program{
             Console.Clear();
 
             Console.WriteLine("\tMENU");
-            Console.WriteLine("Formula da Média Aritmética");
+            Console.WriteLine("1- Média Aritmética");
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
             Console.WriteLine("5- Opção 5");
             Console.WriteLine("6- Opção 6");
-            Console.WriteLine("99- Sair\n");
+            Console.WriteLine("7- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
 
@@ -27,15 +27,15 @@ class Program{
             Console.Clear();
             switch (opt){
                 case 1:
-                    Console.Write("Você escolheu a Fórmula da Média Aritmética, agora vamos cálcular!");
+                    Console.Write("Você escolheu a Fórmula da Média Aritmética, agora vamos cálcular!   ");
 
-                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    Console.WriteLine("\nDigite o valor da primeira variável: ");
                     c1 = double.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    Console.WriteLine("Digite o valor da segunda variável: ");
                     c2 = double.Parse(Console.ReadLine());
 
-                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    Console.WriteLine("Digite o valor da terceira variável: ");
                     c3 = double.Parse(Console.ReadLine());
 
                     Resultado = Biblioteca.mediaAritmetica(c1,c2,c3);
@@ -60,7 +60,7 @@ class Program{
                 case 6:
                     Console.WriteLine("Opt6");
                     break;
-                case 99:
+                case 7:
                     Console.WriteLine("Opção sair");
                     repetir = false;
                     break;
