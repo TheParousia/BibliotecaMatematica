@@ -7,7 +7,7 @@ class Program
 
         int opt = 0;
         bool repetir = true;  
-        double basedoquadrado, altura, resultado, basemaior, basemenor raio, largura, basedoprisma;
+        double b, h, area, basedoquadrado, altura, resultado, basemaior, basemenor raio, largura, basedoprisma;
         double x1, x2, y1, y2;
       
         do{
@@ -21,6 +21,7 @@ class Program
             Console.WriteLine("4- Volume de um prisma retangular");    
             Console.Write("5- Área de um círculo\t");
             Console.WriteLine("6- Distancia entre dois pontos");
+            Console.Write("7- Area do Triangulo Retangulo\t");
             Console.WriteLine("99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
@@ -112,6 +113,20 @@ class Program
                    resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
                    Console.WriteLine("A Distância entre os dois pontos é {0} ", resultado);
                     break;
+                case 7:
+                
+                    Console.WriteLine("Area do Triangulo Retangulo");
+                    
+                    Console.WriteLine("digite o valor da base :");
+                    b = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da altura :");
+                    h = double.Parse(Console.ReadLine());
+
+                    area = Biblioteca.areaTriangulo (b ,h);
+                    Console.WriteLine("Área do triangulo = {0}", area);
+                
+                  break;
                 case 99:
                     Console.WriteLine("Opção sair");
                     repetir = false;
