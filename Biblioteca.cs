@@ -1,4 +1,14 @@
+
 class Biblioteca{
+    // Código do Cyranto
+    static public double areaDoCirculo(double raio)
+    {
+        double area;
+        area = Math.PI * Math.Pow(raio, 2);
+
+        return area;
+    }
+
     // Código do Pedro
     //Escdreva a sua função alterando o que for nescessário
     static public double VolumeDoPrisma(double largura, double basedoprisma, double altura){

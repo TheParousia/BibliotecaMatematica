@@ -1,30 +1,29 @@
 ﻿using System;
 
-class Program{
-
-
+class Program
+{
     static void Main(){
         //Insira as variáveis do seu algoritmo aqui
-      
+
         int opt = 0;
         double basedoquadrado, altura, resultado;
         double basemaior, basemenor, altura, resultado;
         double raio;
         bool repetir = true;
-        double largura, basedoprisma, altura, resultado;
-        //Insira as variáveis do seu algoritmo aqui
-        
-      do{
+        double raio, resultado;
+        double largura, basedoprisma, altura, resultado;  
+        do{
             //Apaga o que tem na tela
             Console.Clear();
         
             Console.WriteLine("\tMENU");
 
-            Console.Write("1- Área de um trapézio");
-            Console.WriteLine("    2- Área de um quadrado");
-            Console.Write("3 - Calcular o Volume da Esfera");
+
+            Console.Write("1- Área de um trapézio\t");
+            Console.WriteLine("2- Área de um quadrado");
+            Console.Write("3 - Calcular o Volume da Esfera\t");
             Console.WriteLine("4- Volume de um prisma retangular");    
-            Console.WriteLine("5- Opção 5");
+            Console.Write("5- Área de um círculo\t");
             Console.WriteLine("6- Opção 6");
             Console.WriteLine("99- Sair\n");
 
@@ -32,6 +31,7 @@ class Program{
 
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
+
             switch (opção){
               case 1:
                    Console.WriteLine("Você escolheu calcular a área de um trapézio");
@@ -61,9 +61,7 @@ class Program{
                     Console.WriteLine("A area do quadrado é {0} ", resultado);
 
                     break;
-                
                 case 3:
-                    Console.WriteLine("Opção 1");
                     Console.WriteLine("Digite valor do raio: ");
                     raio = int.Parse(Console.ReadLine());
 
@@ -90,7 +88,14 @@ class Program{
 
                     break;
                 case 5:
-                    Console.WriteLine("Opt5");
+                    Console.WriteLine("Você escolheu calcular a área de um círculo");
+
+                    Console.WriteLine("Digite o valor do raio do círculo:");
+                    raio = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.areaDoCirculo(raio);
+
+                    Console.WriteLine("A área do círculo é {0} ", resultado);
                     break;
                 case 6:
                     Console.WriteLine("Opt6");
@@ -108,8 +113,8 @@ class Program{
             // Pausa a execução do programa até uma tecla ser apertada
             Console.ReadKey();
 
-        }while(repetir);
+        } while (repetir);
     }
-    
+
 }
 
