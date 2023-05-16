@@ -8,10 +8,10 @@ class Program{
       
         int opt = 0;
         double basedoquadrado, altura, resultado;
-        double basemaior, basemenor, altura, resultado;
+        double basemaior, basemenor;
         double raio;
         bool repetir = true;
-        double num;
+        double num,area;
         
       do{
 
@@ -32,7 +32,7 @@ class Program{
 
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
-            switch (opção){
+            switch (opt){
               case 1:
                    Console.WriteLine("Você escolheu calcular a área de um trapézio");
                     
@@ -78,9 +78,9 @@ class Program{
 
                     num = double.Parse(Console.ReadLine());
                     
-                    Biblioteca.areaCirculo(num);
+                    area = Biblioteca.areaCirculo(num);
                 
-                    Console.WriteLine("A área do círculo =  {0}",num);
+                    Console.WriteLine("A área do círculo =  {0}",area);
 
                     break;
                 case 5:
