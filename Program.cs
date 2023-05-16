@@ -6,25 +6,21 @@ class Program
         //Insira as variáveis do seu algoritmo aqui
 
         int opt = 0;
-        double basedoquadrado, altura, resultado;
-        double basemaior, basemenor, altura, resultado;
-        double raio;
-        bool repetir = true;
-        double raio, resultado;
-        double largura, basedoprisma, altura, resultado;  
+        bool repetir = true;  
+        double basedoquadrado, altura, resultado, basemaior, basemenor raio, largura, basedoprisma;
+        double x1, x2, y1, y2;
+      
         do{
             //Apaga o que tem na tela
             Console.Clear();
         
             Console.WriteLine("\tMENU");
-
-
             Console.Write("1- Área de um trapézio\t");
             Console.WriteLine("2- Área de um quadrado");
             Console.Write("3 - Calcular o Volume da Esfera\t");
             Console.WriteLine("4- Volume de um prisma retangular");    
             Console.Write("5- Área de um círculo\t");
-            Console.WriteLine("6- Opção 6");
+            Console.WriteLine("6- Distancia entre dois pontos");
             Console.WriteLine("99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
@@ -32,7 +28,7 @@ class Program
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
 
-            switch (opção){
+            switch (opt){
               case 1:
                    Console.WriteLine("Você escolheu calcular a área de um trapézio");
                     
@@ -99,6 +95,22 @@ class Program
                     break;
                 case 6:
                     Console.WriteLine("Opt6");
+                    Console.WriteLine("Você escolheu a opção 6(Distancia entre dois pontos)");
+
+                   Console.WriteLine("Digite a Coordenadas X do ponto B: ");
+                    x1 = double.Parse(Console.ReadLine());
+
+                   Console.WriteLine("Digite a Coordenadas X do ponto A: ");
+                    x2 = double.Parse(Console.ReadLine());
+                        
+                   Console.WriteLine("Digite a Coordenadas Y do ponto B: ");
+                    y1 = double.Parse(Console.ReadLine());
+
+                   Console.WriteLine("Digite a Coordenadas Y do ponto A: ");
+                    y2 = double.Parse(Console.ReadLine());
+
+                   resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
+                   Console.WriteLine("A Distância entre os dois pontos é {0} ", resultado);
                     break;
                 case 99:
                     Console.WriteLine("Opção sair");
