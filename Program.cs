@@ -17,7 +17,7 @@ class Program{
             Console.WriteLine("2- Opção 2");
             Console.WriteLine("3- Opção 3");
             Console.WriteLine("4- Opção 4");
-            Console.WriteLine("5- Area do Triangulo");
+            Console.WriteLine("5- Area do Triangulo Retangulo");
             Console.WriteLine("6- Opção 6");
             Console.WriteLine("99- Sair\n");
 
@@ -39,7 +39,7 @@ class Program{
                     Console.WriteLine("Opt4");
                     break;
                 case 5:
-                    Console.WriteLine("Area do Triangulo");
+                    Console.WriteLine("Area do Triangulo Retangulo");
                     
                     Console.WriteLine("digite o valor da base :");
                     b = double.Parse(Console.ReadLine());
