@@ -8,7 +8,7 @@ class Program
         int opt = 0;
         bool repetir = true;  
         double b, h, area, basedoquadrado, altura, resultado, basemaior, basemenor raio, largura, basedoprisma;
-        double x1, x2, y1, y2;
+        double x1, x2, y1, y2, c1, c2, c3;
       
         do{
             //Apaga o que tem na tela
@@ -22,6 +22,7 @@ class Program
             Console.Write("5- Área de um círculo\t");
             Console.WriteLine("6- Distancia entre dois pontos");
             Console.Write("7- Area do Triangulo Retangulo\t");
+            Console.Write("8- Formula da Média Aritmética, usando 3 numeros");
             Console.WriteLine("99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
@@ -127,6 +128,23 @@ class Program
                     Console.WriteLine("Área do triangulo = {0}", area);
                 
                   break;
+                case 8:
+                    Console.Write("Você escolheu a Fórmula da Média Aritmética, agora vamos cálcular!");
+
+                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    c1 = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    c2 = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o valor da primeira variável: ");
+                    c3 = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.mediaAritmetica(c1,c2,c3);
+
+                    Console.WriteLine("Média artimética = {0}", resultado);
+
+                    break;
                 case 99:
                     Console.WriteLine("Opção sair");
                     repetir = false;
