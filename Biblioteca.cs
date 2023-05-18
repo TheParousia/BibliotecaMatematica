@@ -1,5 +1,14 @@
 
 class Biblioteca{
+    //Escdreva a sua função alterando o que for nescessário
+    // Ewerton
+    static public double volumeDocubo(double a){
+        double aresta;
+
+        aresta= a* a* a;
+
+        return aresta;
+    }
   
     // Código do Cyranto
     static public double areaDoCirculo(double raio){

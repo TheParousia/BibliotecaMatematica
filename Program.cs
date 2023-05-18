@@ -7,7 +7,7 @@ class Program
 
         int opt = 0;
         bool repetir = true;  
-        double D, d, b, h, area, num, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
+        double D, d, b, h, a, aresta, area, num, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
         double volumeCilindro;
         double x1, x2, y1, y2, c1, c2, c3;
       
@@ -27,7 +27,9 @@ class Program
             Console.Write("9- Volume de uma pirâmide");
             Console.WriteLine("10- Volume do cilindro");
             Console.Write("11- Calcula área do Losango\t");
+            Console.WriteLine("12- Digite o volume do cubo");
             Console.WriteLine("\n99- Sair\n");
+
 
             opt = int.Parse(Console.ReadLine());
 
@@ -186,6 +188,18 @@ class Program
                     resultado = Biblioteca.CalculeAreaLosango(D, d);
                    
                     Console.WriteLine("A área do losango é {0}", resultado);
+                    break;
+                
+                case 12:
+                    Console.WriteLine(" você escolheu a formula do volume do cubo ");
+                   
+                    Console.WriteLine("Digite o volume o cubo: ");
+
+                    a = double.Parse(Console.ReadLine());
+
+                    aresta = Biblioteca.volumeDocubo(a );
+                    // Ewerton você tinha colocado um break nessa nesse lugar, seu programa nunca iria imprimir a linha subsequente
+                    Console.WriteLine("O Resultado do volume do cubo : (0)", resultado);
                     break;
                 case 99:
                     Console.WriteLine("Opção sair");
