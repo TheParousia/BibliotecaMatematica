@@ -7,7 +7,8 @@ class Program
 
         int opt = 0;
         bool repetir = true;  
-        double b, h, area, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
+        double b, h, area, num, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
+        double volumeCilindro;
         double x1, x2, y1, y2, c1, c2, c3;
       
         do{
@@ -24,6 +25,7 @@ class Program
             Console.Write("7- Area do Triangulo Retangulo\t");
             Console.WriteLine("8- Formula da Média Aritmética, usando 3 numeros");
             Console.Write("9- Volume de uma pirâmide");
+            Console.Write("10- Volume do cilindro");
             Console.WriteLine("99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
@@ -58,7 +60,6 @@ class Program
                     resultado = Biblioteca.areaQuadrado(basedoquadrado, altura);
 
                     Console.WriteLine("A area do quadrado é {0} ", resultado);
-
                     break;
                 case 3:
                     Console.WriteLine("Digite valor do raio: ");
@@ -68,8 +69,7 @@ class Program
                     
                     Console.WriteLine("O Resultado do volume da Esfera : {0}",resultado);
                     break;
-                case 4:
-                
+                case 4:   
                     Console.WriteLine("Você escolheu calcular o volume de um prisma retangular");
 
                     Console.WriteLine("Digite o valor da largura do prisma:");
@@ -159,6 +159,20 @@ class Program
                     Console.WriteLine("volume da Piramide é {0} ", resultado);
                 
                   break;
+                
+                case 10:
+                    Console.WriteLine("Digite a altura do cilindro");
+                    
+                    altura = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Digite o raio da base do cilindro");
+
+                    raio = double.Parse(Console.ReadLine());
+                    
+                    volumeCilindro = Biblioteca.CalculaVolumeCilindro(raio, altura);
+
+                    Console.WriteLine("{0}", volumeCilindro);
+                    break;
                 case 99:
                     Console.WriteLine("Opção sair");
                     repetir = false;
@@ -167,7 +181,7 @@ class Program
                     Console.WriteLine("Opção Invalida");
                     break;
             }
-
+          
             Console.WriteLine("\nPrecione uma tecla para prosseguir...");
             // Pausa a execução do programa até uma tecla ser apertada
             Console.ReadKey();

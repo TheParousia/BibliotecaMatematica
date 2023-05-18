@@ -73,4 +73,12 @@ class Biblioteca{
 
         return distancia;
     }
+    
+    // Edson
+    static public double CalculaVolumeCilindro(double raio, double altura){
+        // Erro encontrado na formula
+        // A formula correta é πr²h
+        // A formula digita foi 2*Math.PI*raio*altura 
+        return Math.PI * Math.Pow(raio, 2) * altura;
+    }
 }
