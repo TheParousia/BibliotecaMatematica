@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Program
 {
@@ -7,7 +7,7 @@ class Program
 
         int opt = 0;
         bool repetir = true;  
-        double b, h, area, num, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
+        double D, d, b, h, area, num, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
         double volumeCilindro;
         double x1, x2, y1, y2, c1, c2, c3;
       
@@ -25,8 +25,9 @@ class Program
             Console.Write("7- Area do Triangulo Retangulo\t");
             Console.WriteLine("8- Formula da Média Aritmética, usando 3 numeros");
             Console.Write("9- Volume de uma pirâmide");
-            Console.Write("10- Volume do cilindro");
-            Console.WriteLine("99- Sair\n");
+            Console.WriteLine("10- Volume do cilindro");
+            Console.Write("11- Calcula área do Losango\t");
+            Console.WriteLine("\n99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
 
@@ -172,6 +173,19 @@ class Program
                     volumeCilindro = Biblioteca.CalculaVolumeCilindro(raio, altura);
 
                     Console.WriteLine("{0}", volumeCilindro);
+                    break;
+                  case 11:
+                    Console.WriteLine("Calcula área Losango");
+                    
+                    Console.WriteLine("insira a diagonal menor");
+                    d = double.Parse(Console.ReadLine());
+                     
+                    Console.WriteLine("insira a diagonal maior");
+                    D = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.CalculeAreaLosango(D, d);
+                   
+                    Console.WriteLine("A área do losango é {0}", resultado);
                     break;
                 case 99:
                     Console.WriteLine("Opção sair");

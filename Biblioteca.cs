@@ -1,16 +1,18 @@
 
 class Biblioteca{
+  
     // Código do Cyranto
-    static public double areaDoCirculo(double raio)
-    {
+    static public double areaDoCirculo(double raio){
         double area;
         area = Math.PI * Math.Pow(raio, 2);
 
         return area;
     }
-
-
-    //Escdreva a sua função alterando o que for nescessário
+  
+    // Kaori
+    static public double CalculeAreaLosango(double D, double d){
+        return (D*d)/ 2;
+    }
     // Khetellen
     static public double volumeDaPiramide(double areaDabase , double altura){
         double volume;
