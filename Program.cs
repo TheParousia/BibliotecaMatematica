@@ -4,7 +4,7 @@ class Program
 {
     static void Main(){
         //Insira as variáveis do seu algoritmo aqui
-
+      
         int opt = 0;
         bool repetir = true;  
         double D, d, b, h, a, aresta, area, num, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
@@ -30,12 +30,11 @@ class Program
             Console.WriteLine("12- Digite o volume do cubo");
             Console.WriteLine("\n99- Sair\n");
 
-
             opt = int.Parse(Console.ReadLine());
 
             //Limpa o menu para mostrar somente a opção selecionada
             Console.Clear();
-
+          
             switch (opt){
               case 1:
                    Console.WriteLine("Você escolheu calcular a área de um trapézio");
@@ -87,11 +86,10 @@ class Program
                     resultado = Biblioteca.VolumeDoPrisma(largura, basedoprisma, altura);
 
                     Console.WriteLine("A área do prisma é {0} ", resultado);
-
                     break;
                 case 5:
-                    Console.WriteLine("Você escolheu calcular a área de um círculo");
-
+                    Console.WriteLine("Você escolheu a Formula do círculo, agora vamos calcular!");                
+                
                     Console.WriteLine("Digite o valor do raio do círculo:");
                     raio = double.Parse(Console.ReadLine());
 

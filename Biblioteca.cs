@@ -17,6 +17,15 @@ class Biblioteca{
 
         return area;
     }
+    
+    // Neila 
+    static public double areaCirculo(double r){
+        double area;
+
+        area = Math.PI * (r*r);
+        
+        return area;
+    }
   
     // Kaori
     static public double CalculeAreaLosango(double D, double d){
