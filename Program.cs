@@ -7,7 +7,7 @@ class Program
 
         int opt = 0;
         bool repetir = true;  
-        double b, h, area, basedoquadrado, altura, resultado, basemaior, basemenor raio, largura, basedoprisma;
+        double b, h, area, basedoquadrado, areaDabase, altura, resultado, basemaior, basemenor, raio, largura, basedoprisma;
         double x1, x2, y1, y2, c1, c2, c3;
       
         do{
@@ -22,7 +22,8 @@ class Program
             Console.Write("5- Área de um círculo\t");
             Console.WriteLine("6- Distancia entre dois pontos");
             Console.Write("7- Area do Triangulo Retangulo\t");
-            Console.Write("8- Formula da Média Aritmética, usando 3 numeros");
+            Console.WriteLine("8- Formula da Média Aritmética, usando 3 numeros");
+            Console.Write("9- Volume de uma pirâmide");
             Console.WriteLine("99- Sair\n");
 
             opt = int.Parse(Console.ReadLine());
@@ -96,23 +97,22 @@ class Program
                     Console.WriteLine("A área do círculo é {0} ", resultado);
                     break;
                 case 6:
-                    Console.WriteLine("Opt6");
-                    Console.WriteLine("Você escolheu a opção 6(Distancia entre dois pontos)");
+                    Console.WriteLine("Você escolheu a opção 6 (Distancia entre dois pontos)");
 
-                   Console.WriteLine("Digite a Coordenadas X do ponto B: ");
+                    Console.WriteLine("Digite a Coordenadas X do ponto B: ");
                     x1 = double.Parse(Console.ReadLine());
 
-                   Console.WriteLine("Digite a Coordenadas X do ponto A: ");
+                    Console.WriteLine("Digite a Coordenadas X do ponto A: ");
                     x2 = double.Parse(Console.ReadLine());
-                        
-                   Console.WriteLine("Digite a Coordenadas Y do ponto B: ");
+
+                    Console.WriteLine("Digite a Coordenadas Y do ponto B: ");
                     y1 = double.Parse(Console.ReadLine());
 
-                   Console.WriteLine("Digite a Coordenadas Y do ponto A: ");
+                    Console.WriteLine("Digite a Coordenadas Y do ponto A: ");
                     y2 = double.Parse(Console.ReadLine());
 
-                   resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
-                   Console.WriteLine("A Distância entre os dois pontos é {0} ", resultado);
+                    resultado = Biblioteca.distanciaEntreDoisPontos(x2, x1, y2, y1);
+                    Console.WriteLine("A Distância entre os dois pontos é {0} ", resultado);
                     break;
                 case 7:
                 
@@ -145,6 +145,20 @@ class Program
                     Console.WriteLine("Média artimética = {0}", resultado);
 
                     break;
+                case 9:
+                    Console.WriteLine("Você escolheu a opção 9");
+                        
+                    Console.WriteLine("Digite a área da base pirâmide:");
+                    areaDabase = double.Parse(Console.ReadLine());
+                        
+                    Console.WriteLine("Digite o valor da altura:");
+                    altura = double.Parse(Console.ReadLine());
+
+                    resultado = Biblioteca.volumeDaPiramide(areaDabase, altura);
+
+                    Console.WriteLine("volume da Piramide é {0} ", resultado);
+                
+                  break;
                 case 99:
                     Console.WriteLine("Opção sair");
                     repetir = false;

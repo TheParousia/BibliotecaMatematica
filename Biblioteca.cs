@@ -9,8 +9,18 @@ class Biblioteca{
         return area;
     }
 
-    // Código do Pedro
+
     //Escdreva a sua função alterando o que for nescessário
+    // Khetellen
+    static public double volumeDaPiramide(double areaDabase , double altura){
+        double volume;
+        
+        volume = (areaDabase * altura)/3; 
+       
+        return volume;
+    }
+    
+    // Luana
     static public double mediaAritmetica(double c1, double c2, double c3){
         double media;
 
@@ -18,12 +28,15 @@ class Biblioteca{
 
         return media;
     }
-  
+    
+    // Lucas
     static public double areaTriangulo(double b, double h){
         double area;
         area = b*h/2;
         return area;
-
+    }
+  
+    // Pedro
     static public double VolumeDoPrisma(double largura, double basedoprisma, double altura){
         double volume;
         volume = largura * basedoprisma * altura;
@@ -52,12 +65,12 @@ class Biblioteca{
 
         return area;
     }
+    
+    // Rafael
     static public double distanciaEntreDoisPontos(double x2, double x1, double y2, double y1){
         double distancia;
         distancia = Math.Sqrt (Math.Pow( x2 - x1, 2)  + Math.Pow( y2 - y1, 2 ));
 
         return distancia;
     }
-
-
 }
